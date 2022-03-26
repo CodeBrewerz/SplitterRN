@@ -35,7 +35,7 @@ function SettingsScreen() {
     </View>
   );
 }
-const x = "Test";
+
 const Tab = createMaterialBottomTabNavigator();
 
 const App = () => {
