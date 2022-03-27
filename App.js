@@ -19,6 +19,8 @@ import { PreferencesAtom } from './context/ThemePreferenceContext';
 import {
   View,
 } from 'react-native';
+import { GroupActivity } from './components/GroupActivity';
+import { TabsExample } from './components/TabsExample';
 
 const ThemeToggle = () => {
   const theme = useTheme();
@@ -45,10 +47,8 @@ const Header = ({ title }) => {
 
 function HomeScreen() {
   return (
-    <View >
-      <Header title="Home" />
-      <Text>Home!</Text>
-    </View>
+      <TabsExample dark={true} />
+
   );
 }
 
@@ -85,6 +85,7 @@ const App = () => {
       <PaperProvider theme={theme}>
         <Tab.Navigator>
           <Tab.Screen name="Home" component={HomeScreen} />
+          <Tab.Screen name="Group" component={GroupActivity} />
           <Tab.Screen name="Settings" component={SettingsScreen} />
         </Tab.Navigator>
       </PaperProvider>

@@ -5720,7 +5720,17 @@
   "resolved" "https://registry.npmjs.org/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz"
   "version" "1.3.1"
 
-"react-native-paper@^4.11.2", "react-native-paper@>= 3.0.0":
+"react-native-pager-view@*", "react-native-pager-view@^5.4.15":
+  "integrity" "sha512-5NssD840wFCuOL4B1ZRiRADvt+Vx2Dgify4SmAUqHXCx03yiGPnRWmFjYXyQeK6gq/8VY+gPGE4bTy9ahzBbDw=="
+  "resolved" "https://registry.npmjs.org/react-native-pager-view/-/react-native-pager-view-5.4.15.tgz"
+  "version" "5.4.15"
+
+"react-native-paper-tabs@^0.7.0":
+  "integrity" "sha512-TXz1G1hLJNvykJ57VhjKFVRgRDC2bxzb/bwPJ59POK9nGO0yD+Rx7+W5D0i5/ZQF1uKSV92IMv+eowd/BRM46Q=="
+  "resolved" "https://registry.npmjs.org/react-native-paper-tabs/-/react-native-paper-tabs-0.7.0.tgz"
+  "version" "0.7.0"
+
+"react-native-paper@*", "react-native-paper@^4.11.2", "react-native-paper@>= 3.0.0":
   "integrity" "sha512-r+M5unY9Avez4we/RijVh4iy8gqxK93R4840aZmbakOJLIuxjfNh3B6SuoxBEbR6diuPRbKVeWHKju4mhltxWw=="
   "resolved" "https://registry.npmjs.org/react-native-paper/-/react-native-paper-4.11.2.tgz"
   "version" "4.11.2"
