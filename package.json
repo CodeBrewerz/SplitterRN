@@ -7,18 +7,21 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start-packager": "env REACT_DEBUGGER=\"$([ -d '/Applications/React Native Debugger.app' ] && echo \"open 'rndebugger://set-debugger-loc?host=localhost&port=8081' --args\")\" node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
     "@react-navigation/material-bottom-tabs": "^6.1.1",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.2",
+    "deepmerge": "^4.2.2",
     "react": "17.0.2",
     "react-native": "0.67.4",
     "react-native-paper": "^4.11.2",
     "react-native-safe-area-context": "^4.2.2",
     "react-native-screens": "^3.13.1",
-    "react-native-vector-icons": "^9.1.0"
+    "react-native-vector-icons": "^9.1.0",
+    "recoil": "^0.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
