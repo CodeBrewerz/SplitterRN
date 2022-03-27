@@ -21,6 +21,7 @@ import {
 } from 'react-native';
 import { GroupActivity } from './components/GroupActivity';
 import { TabsExample } from './components/TabsExample';
+import { Login } from './components/Login';
 
 const ThemeToggle = () => {
   const theme = useTheme();
@@ -47,8 +48,7 @@ const Header = ({ title }) => {
 
 function HomeScreen() {
   return (
-      <TabsExample dark={true} />
-
+    <Login />
   );
 }
 
