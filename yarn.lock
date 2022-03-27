@@ -2436,6 +2436,11 @@
   dependencies:
     "cssom" "~0.3.6"
 
+"currency.js@^2.0.4":
+  "integrity" "sha512-6/OplJYgJ0RUlli74d93HJ/OsKVBi8lB1+Z6eJYS1YZzBuIp4qKKHpJ7ad+GvTlWmLR/hLJOWTykN5Nm8NJ7+w=="
+  "resolved" "https://registry.npmjs.org/currency.js/-/currency.js-2.0.4.tgz"
+  "version" "2.0.4"
+
 "d3-array@^1.2.0":
   "integrity" "sha512-KHW6M86R+FUPYGb3R5XiYjXPq7VzwxZ22buHhAEVG5ztoEcZZMLov530mmccaqA1GghZArjQV46fuc8kUqhhHw=="
   "resolved" "https://registry.npmjs.org/d3-array/-/d3-array-1.2.4.tgz"
