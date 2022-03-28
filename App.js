@@ -15,12 +15,13 @@ import {
 } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { useRecoilState, useRecoilValue } from 'recoil';
-import { PreferencesAtom } from './context/ThemePreferenceContext';
+import { isLoggedIn, PreferencesAtom, userAuthAtom } from './context/ThemePreferenceContext';
 import {
   View,
 } from 'react-native';
 import { GroupActivity } from './components/GroupActivity';
 import { TabsExample } from './components/TabsExample';
+import { LoggedInListItem, Login, LoginListItem, LogoutListItem } from './components/Login';
 
 const ThemeToggle = () => {
   const theme = useTheme();
@@ -47,8 +48,9 @@ const Header = ({ title }) => {
 
 function HomeScreen() {
   return (
-      <TabsExample dark={true} />
-
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Home!</Text>
+    </View>
   );
 }
 
@@ -61,11 +63,32 @@ const ThemeToggleListItem = () => (
 )
 
 
+const AuthenticatedSettingsScreen = () => {
+  const authenticatedListItems = [<LoggedInListItem />, <ThemeToggleListItem />, <LogoutListItem />];
+
+  return (
+    <List.Section>
+      {authenticatedListItems}
+    </List.Section>
+  );
+}
+
+const UnauthenticatedSettingsScreen = () => {
+  const unauthenticatedListItems = [<LoginListItem />, <ThemeToggleListItem />];
+
+  return (
+    <List.Section>
+      {unauthenticatedListItems}
+    </List.Section>
+  );
+}
+
 function SettingsScreen() {
+  const authenticated = useRecoilValue(isLoggedIn);
   return (
     <View>
       <Header title="Settings" />
-      <ThemeToggleListItem />
+      {authenticated ? <AuthenticatedSettingsScreen /> : <UnauthenticatedSettingsScreen />}
     </View>
   );
 }

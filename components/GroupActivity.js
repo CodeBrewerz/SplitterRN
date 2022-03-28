@@ -15,7 +15,6 @@ import {
 import { VictoryBar, VictoryChart, VictoryLine, VictoryTheme } from "victory-native";
 import currency from 'currency.js';
 import React from 'react';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 const transactions = [
     {
